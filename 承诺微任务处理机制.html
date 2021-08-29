@@ -1,0 +1,11 @@
+ <script>
+     new Promise((resolve, reject) => {
+        //第一步干的事情，比如从后台获取数据
+         reject("失败");
+         
+     }).then(value=>{
+         console.log("在这里写成功的业务处理");
+     },reason=>{
+         console.log("在这里写失败的业务处理");
+     });
+ </script>

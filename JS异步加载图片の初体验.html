@@ -1,0 +1,20 @@
+<body>
+
+</body>
+
+<script>
+    function loadImage(src, resolve, reject){
+        let image = new Image();
+        image.src = src;
+        image.onload = ()=>{
+            resolve(image)
+        };
+        image.onerror = reject;
+    }
+    loadImage("images/正太.gif", (image)=>{
+        document.body.appendChild(image);
+    },()=>{
+        console.log("图片加载失败");
+    })
+    console.log("最后一行");
+</script> 
