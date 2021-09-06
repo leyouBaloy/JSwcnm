@@ -1,0 +1,36 @@
+<script>
+    new Promise((resolve, reject)=>{
+        resolve("第一");
+    })
+    .then(
+        value=>{
+            console.log(value);
+            // resolve("第二");
+            return "第二"
+        }
+    )
+    .then(
+        value=>{
+        console.log(value);
+    })
+</script>
+
+
+<script>
+    new Promise((resolve, reject)=>{
+        resolve("第一");
+    })
+    .then(
+        value=>{
+            console.log(value);
+            // resolve("第二");
+            return new Promise((resolve, reject)=>{
+                resolve("第二")
+            })
+        }
+    )
+    .then(
+        value=>{
+        console.log(value);
+    })
+</script>
