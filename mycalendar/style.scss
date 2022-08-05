@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0BEC5;
+}
+.calendar {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 2px;
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0 20px;
+        background-color: #546E7A; 
+        color: #fff;
+        font-size: 20px;
+    }
+    .row {
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        &.title {
+            color: 546E7A;
+        }
+        &.content {
+            justify-content: flex-start;
+            padding-top: 0;
+            flex-wrap: wrap;
+            & > span {
+                padding-bottom: 20px;
+                width: calc(100% / 7);
+                text-align: center;
+            }
+        }
+    }
+}
