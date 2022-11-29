@@ -143,9 +143,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 #events-log {
   display: inline-block;
