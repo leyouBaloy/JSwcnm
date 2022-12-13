@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    /* 背景颜色 */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    /* 盒阴影 */
+    filter: drop-shadow(0 0 10px white);
+}
+
+/* 雪粒 */
+.snow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* 第一粒雪 */
+.snow:nth-child(1){
+    /* 透明度 */
+    opacity: 0.666;
+    /* 初始位置 */
+    transform: translate(30vw, -10px) scale(0.666);
+    /* 动画 */
+    animation: fall-1 12s linear infinite;
+}
+/* 第一粒雪的动画 */
+@keyframes fall-1 {
+    30%{
+        transform: translate(40vw, 30vh) scale(0.666);
+    }
+    to{
+        transform: translate(60vw, 100vh) scale(0.666);
+    }
+}

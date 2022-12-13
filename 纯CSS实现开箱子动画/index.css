@@ -103,11 +103,12 @@ body {
 .box .text {
     width: 200px;
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: bold;
     transition: 0.6s;
 }
 
 .box:hover .text{
     transform: translateY(-250px);
+    font-size: 25px;
 }
